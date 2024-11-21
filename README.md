@@ -1,4 +1,4 @@
-# SharePoint Training Management Site
+# CapApp
 
 ## Project Overview
 A comprehensive SharePoint site developed using SharePoint Framework (SPFx) for managing training resources, reports, and administration.
