@@ -1,73 +1,102 @@
-# cap-app
+# SharePoint Training Management Site
 
-## Summary
-
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.20.0-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
+## Project Overview
+A comprehensive SharePoint site developed using SharePoint Framework (SPFx) for managing training resources, reports, and administration.
 
 ## Features
+- **Home Page**: Welcome overview and site navigation
+- **Report Page**: Interactive data visualization and reporting
+- **Admin Page**: Training data management with CRUD operations
 
-Description of the extension that expands upon high-level summary above.
+## Prerequisites
+- Node.js (v14+)
+- Gulp
+- Yeoman
+- Office 365 Tenant
+- SharePoint Online
 
-This extension illustrates the following concepts:
+## Development Setup
 
-- topic 1
-- topic 2
-- topic 3
+### Installation
+1. Clone the repository
+```bash
+git clone [https://github.com/S1mpleLim3/CapApp.git]
+cd CapApp
+```
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+2. Install dependencies
+```bash
+npm install
+```
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+### Configuration
+1. Create a `config.json` file in the project root
+2. Add your SharePoint tenant details:
+```json
+{
+  "tenantId": "your-tenant-id",
+  "siteUrl": "https://your-tenant.sharepoint.com/sites/TrainingSite"
+}
+```
 
-## References
+### Local Development
+```bash
+gulp serve
+```
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+## Deployment
+1. Build the solution
+```bash
+gulp bundle --ship
+gulp package-solution --ship
+```
+2. Upload the `.sppkg` file to your SharePoint App Catalog
+
+## Key Technologies
+- SharePoint Framework (SPFx)
+- React.js
+- Office 365
+- PnP JS
+
+## Project Structure
+```
+├── src/
+│   ├── webparts/
+│   │   ├── homePage/
+│   │   ├── reportPage/
+│   │   └── adminPage/
+│   ├── services/
+│   └── types/
+├── config/
+└── deploy/
+```
+
+## SPFx Integration
+The admin page features an SPFx Webpart for managing training data with full CRUD functionality.
+
+## Security & Permissions
+- Requires SharePoint site admin permissions
+- Uses Azure AD for authentication
+- Role-based access control for admin functionalities
+
+## Known Limitations
+- Requires modern browser support
+- Optimal performance on Microsoft Edge and Chrome
+
+## Troubleshooting
+- Ensure all prerequisites are installed
+- Verify SharePoint tenant configuration
+- Check network connectivity
+
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+MIT License
+
+## Contact
+Amit Patro
