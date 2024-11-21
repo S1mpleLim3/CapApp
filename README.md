@@ -3,6 +3,12 @@
 ## Project Overview
 A comprehensive SharePoint site developed using SharePoint Framework (SPFx) for managing training resources, reports, and administration.
 
+![image](https://github.com/user-attachments/assets/b8f3517b-a44c-40ec-8fa8-cf2f7cd3c05d)
+![image](https://github.com/user-attachments/assets/512cf06c-d8df-45d8-b2a9-383dd6c220d3)
+![image](https://github.com/user-attachments/assets/6ac0a54c-becd-4059-8a0e-fc0659414f9a)
+
+
+
 ## Features
 - **Home Page**: Welcome overview and site navigation
 - **Report Page**: Interactive data visualization and reporting
