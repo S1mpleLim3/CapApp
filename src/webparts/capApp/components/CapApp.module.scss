@@ -1,0 +1,23 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+// @import "~bootstrap/scss/bootstrap";
+
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
+}
+
+.capApp {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+}
+/* styles.css */
+// body {
+//   font-family: Arial, sans-serif;
+//   margin: 0;
+//   padding: 0;
+//   color: #333;
+// }

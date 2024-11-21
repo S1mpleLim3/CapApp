@@ -1,0 +1,154 @@
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.hcontainer {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+.tcontainer {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.leftbar {
+  width: 5px; /* Adjust the width as needed */
+  height: 60px;
+  border-left: 5px solid aqua;
+  margin-right: 16px; /* Adjust the spacing as needed */
+  margin-top: -14px;
+}
+
+.righttext {
+  flex: 1;
+  color: black !important;
+}
+
+.header {
+  background: #f3f8fc;
+  padding: 50px 20px;
+  background-image: "../../../assets/BANNERIMAGE.png";
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  color: #0056b3;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.header p {
+  color: #888;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10px;
+  background: #fff;
+}
+
+.intro .content {
+  max-width: 50%;
+}
+
+.intro h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.intro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro ul li {
+  margin: 5px 0;
+}
+
+.intro button {
+  background: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.imagegrid img {
+  width: 350px;
+  margin: 10px;
+}
+
+.blog {
+  background: #f3f8fc;
+  padding: 50px 20px;
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bloggrid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bloggrid img {
+  width: 150px;
+  margin: 10px;
+}
+
+.bloggrid article {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.courses {
+  padding: 50px 20px;
+  text-align: left;
+  background: #fff;
+}
+
+.courses h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.courses ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.courses ul li {
+  margin: 5px 0;
+}
+
+.courses button {
+  background: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cap-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/capApp/CapAppWebPart.js",
+          "manifest": "./src/webparts/capApp/CapAppWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CapAppWebPartStrings": "lib/webparts/capApp/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
